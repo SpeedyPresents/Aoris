@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Visua
 local Window = Library:CreateWindow('Aoris', 'Universal', 'Aoris', 'rbxassetid://12207421163', false, 'Aoris_Config', 'Default')
 --Player Mods
 local Tab = Window:CreateTab('Local Player', true, 'rbxassetid://3926305904', Vector2.new(484, 44), Vector2.new(36, 36))
-local Section = Tab:CreateSection('Player)
+local Section = Tab:CreateSection('Player')
 
 
 

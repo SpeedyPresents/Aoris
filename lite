@@ -26,7 +26,7 @@ Window:AddCommand('SetTheme', {'New Theme'}, 'Changes The Theme.', function(Argu
 end)
 
 Window:AddCommand('Aoris', {}, 'Executes \'Aoris\'.', function(Arguments, Speaker)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SpeedyPresents/VoidV2/main/release"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SpeedyPresents/Aoris/main/beta"))()
 end)
 
 Window:AddCommand('Notify', {}, 'Creates A Notification.', function(Arguments, Speaker)

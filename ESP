@@ -1,0 +1,24 @@
+local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local highlight = Instance.new("Highlight")
+    highlight.Name = "Highlight"
+    function a(v)
+    local highlightClone = Instance.new("Highlight")
+            highlightClone.Adornee = v.Character
+            highlightClone.Parent = v.Character:WaitForChild("HumanoidRootPart")
+            highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            highlightClone.Name = "Highlight"
+    end
+    for i, v in pairs(Players:GetPlayers()) do
+        if v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+               a(v)
+        end
+        v.CharacterAdded:Connect(function()
+           a(v)
+    end)
+    end
+    game.Players.PlayerAdded:Connect(function(player)
+        player.CharacterAdded:Connect(function()
+    a(player)
+    end)
+    end)
